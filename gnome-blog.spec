@@ -1,6 +1,6 @@
 %include        /usr/lib/rpm/macros.python
-
 Summary:	GNOME panel object for posting blog entries
+Summary(pl):	Obiekt panelu GNOME do wysy³ania wpisów bloga
 Name:		gnome-blog
 Version:	0.7
 Release:	0.1
@@ -9,11 +9,17 @@ Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/0.7/%{name}-%{version}.tar.bz2
 # Source0-md5:	20c5666668c27d0b31e2bc5249b9e707
 URL:		http://www.gnome.org/~seth/gnome-blog/
+BuildRequires:	TODO
+Requires(post):	GConf2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 GNOME panel object that allows convenient posting of blog entries to
 any blog that supports the bloggerAPI.
+
+%description -l pl
+Obiekt panelu GNOME pozwalaj±cy na wygodne wysy³anie wpisów bloga do
+dowolnego bloga obs³uguj±cego bloggerAPI.
 
 %prep
 %setup -q
