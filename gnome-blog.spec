@@ -9,8 +9,12 @@ Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/0.7/%{name}-%{version}.tar.bz2
 # Source0-md5:	20c5666668c27d0b31e2bc5249b9e707
 URL:		http://www.gnome.org/~seth/gnome-blog/
-BuildRequires:	TODO
+BuildRequires:	python-pygtk-devel >= 1.99
+BuildRequires:	rpm-pythonprov
 Requires(post):	GConf2
+%pyrequires_eq	python
+Requires:	python-gnome-gconf
+Requires:	python-pygtk-gtk >= 1.99
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
