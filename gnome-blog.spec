@@ -1,4 +1,3 @@
-%include        /usr/lib/rpm/macros.python
 Summary:	GNOME panel object for posting blog entries
 Summary(pl):	Obiekt panelu GNOME do wysy³ania wpisów bloga
 Name:		gnome-blog
