@@ -13,7 +13,6 @@ Patch1:		%{name}-applet-location.patch
 Patch2:		%{name}-pygtk.patch
 BuildRequires:	python-pygtk-devel >= 1.99
 BuildRequires:  python-gnome-devel
-BuildRequires:	rpm-pythonprov
 Requires(post):	GConf2
 %pyrequires_eq	python
 Requires:	python-gnome-gconf
