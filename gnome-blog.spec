@@ -2,12 +2,13 @@ Summary:	GNOME panel object for posting blog entries
 Summary(pl):	Obiekt panelu GNOME do wysy³ania wpisów bloga
 Name:		gnome-blog
 Version:	0.8
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/%{version}/%{name}-%{version}.tar.bz2
 # Source0-md5:	0a953c1dfade735285e768e785423222
 URL:		http://www.gnome.org/~seth/gnome-blog/
+Patch0:		%{name}-firstrun.patch
 BuildRequires:	python-pygtk-devel >= 1.99
 BuildRequires:	rpm-pythonprov
 Requires(post):	GConf2
@@ -26,6 +27,7 @@ dowolnego bloga obs³uguj±cego bloggerAPI.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 %{__aclocal}
