@@ -1,0 +1,22 @@
+--- gnome-blog-poster.orig	2005-01-13 12:21:09.028445944 +0100
++++ gnome-blog-poster	2005-01-13 12:21:16.930244688 +0100
+@@ -28,9 +28,6 @@
+ 
+         client = gconf.client_get_default()
+         value = client.get_bool(self.prefs_key + "/initialized")
+-        if (value == None or value == gtk.FALSE):
+-            poster._showPrefDialog()
+-            client.set_bool(self.prefs_key + "/initialized", gtk.TRUE)
+         
+         poster_window = gtk.Window(gtk.WINDOW_TOPLEVEL)
+         poster_window.set_title(_("Post Blog Entry"))
+@@ -42,6 +39,9 @@
+                                         accel_group=accel_group,
+                                         on_entry_posted=self._onEntryPosted)
+         
++        if (value == None or value == gtk.FALSE):
++            poster._showPrefDialog()
++            client.set_bool(self.prefs_key + "/initialized", gtk.TRUE)
+         poster_window.add(poster)
+         poster_window.show_all()
+ 
