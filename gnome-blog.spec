@@ -7,16 +7,18 @@ License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/%{version}/%{name}-%{version}.tar.bz2
 # Source0-md5:	0a953c1dfade735285e768e785423222
-URL:		http://www.gnome.org/~seth/gnome-blog/
 Patch0:		%{name}-firstrun.patch
 Patch1:		%{name}-applet-location.patch
 Patch2:		%{name}-pygtk.patch
+URL:		http://www.gnome.org/~seth/gnome-blog/
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	python-gnome-devel
 BuildRequires:	python-pygtk-devel >= 1.99
-BuildRequires:  python-gnome-devel
 Requires(post):	GConf2
 %pyrequires_eq	python
-Requires:	python-gnome-gconf
 Requires:	python-gnome-applet
+Requires:	python-gnome-gconf
 Requires:	python-gnome-ui
 Requires:	python-pygtk-gtk >= 1.99
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
