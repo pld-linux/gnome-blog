@@ -2,7 +2,7 @@ Summary:	GNOME panel object for posting blog entries
 Summary(pl):	Obiekt panelu GNOME do wysy³ania wpisów bloga
 Name:		gnome-blog
 Version:	0.8
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/%{version}/%{name}-%{version}.tar.bz2
