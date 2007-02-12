@@ -1,5 +1,5 @@
 Summary:	GNOME panel object for posting blog entries
-Summary(pl):	Obiekt panelu GNOME do wysy≥ania wpisÛw bloga
+Summary(pl.UTF-8):   Obiekt panelu GNOME do wysy≈Çania wpis√≥w bloga
 Name:		gnome-blog
 Version:	0.8
 Release:	5
@@ -28,9 +28,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 GNOME panel object that allows convenient posting of blog entries to
 any blog that supports the bloggerAPI.
 
-%description -l pl
-Obiekt panelu GNOME pozwalaj±cy na wygodne wysy≥anie wpisÛw bloga do
-dowolnego bloga obs≥uguj±cego bloggerAPI.
+%description -l pl.UTF-8
+Obiekt panelu GNOME pozwalajƒÖcy na wygodne wysy≈Çanie wpis√≥w bloga do
+dowolnego bloga obs≈ÇugujƒÖcego bloggerAPI.
 
 %prep
 %setup -q
