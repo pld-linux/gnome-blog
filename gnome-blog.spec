@@ -1,5 +1,5 @@
 Summary:	GNOME panel object for posting blog entries
-Summary(pl.UTF-8):   Obiekt panelu GNOME do wysyłania wpisów bloga
+Summary(pl.UTF-8):	Obiekt panelu GNOME do wysyłania wpisów bloga
 Name:		gnome-blog
 Version:	0.8
 Release:	5
