@@ -11,11 +11,16 @@ Patch0:		%{name}-firstrun.patch
 Patch1:		%{name}-applet-location.patch
 Patch2:		%{name}-pygtk.patch
 URL:		http://www.gnome.org/~seth/gnome-blog/
+BuildRequires:	GConf2-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gettext-devel
+BuildRequires:	intltool
+BuildRequires:	pkgconfig
 BuildRequires:	python-gnome-desktop-devel
 BuildRequires:	python-gnome-devel
 BuildRequires:	python-pygtk-devel >= 1.99
+BuildRequires:	rpm-pythonprov
 Requires(post):	GConf2
 %pyrequires_eq	python
 Requires:	python-gnome-desktop-applet
@@ -39,6 +44,7 @@ dowolnego bloga obsługującego bloggerAPI.
 %patch2 -p0
 
 %build
+%{__intltoolize}
 %{__aclocal}
 %{__autoconf}
 %{__automake}
