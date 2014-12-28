@@ -14,7 +14,7 @@ URL:		http://www.gnome.org/~seth/gnome-blog/
 BuildRequires:	GConf2-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	intltool
 BuildRequires:	pkgconfig
 BuildRequires:	python-gnome-desktop-devel
